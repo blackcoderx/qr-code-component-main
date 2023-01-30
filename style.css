@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Light_gray: hsl(212, 45%, 89%);
+  --Grayish_blue: hsl(220, 15%, 55%);
+  --Dark_blue: hsl(218, 44%, 22%);
+  --font-size-title:1.5rem;
+  --font-size-p: 0.9375rem;
+
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Light_gray);
+  gap: 1em;
+}
+
+
+.card{
+  width: 20em;
+  height: 500px;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  background-color: var(--White);
+
+}
+
+.qr-code{
+  width: 290px;
+  border-radius: 1rem;
+}
+
+.card-info{
+  margin-top: 1rem;
+}
+
+.card-title{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--Dark_blue);
+  padding: 0 0.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.info{
+  font-size: var(--font-size-p);
+  font-weight: 600;
+  color: var(--Grayish_blue);
+  padding: 15px;
+  word-spacing: 0.5px;
+  letter-spacing:0.1px;
+
+}
+
+
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover{
+  text-decoration-line: underline;
+}
