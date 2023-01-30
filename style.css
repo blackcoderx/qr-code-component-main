@@ -21,7 +21,7 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   font-family: 'Outfit', sans-serif;
   background-color: var(--Light_gray);
@@ -31,7 +31,7 @@ body{
 
 .card{
   width: 20em;
-  height: 500px;
+  /* height: 500px; */
   padding: 1rem;
   border-radius: 1.5rem;
   text-align: center;
@@ -66,13 +66,36 @@ body{
 
 }
 
+.attribution{
+  margin-top: 100px;
+  text-align: center;
+}  
 
 
 a{
+  position: relative;
   text-decoration: none;
-  color: blue;
 }
 
-a:hover{
-  text-decoration-line: underline;
+/* This code is not part of the challenge , i just did it to add some extra styling to the links  */
+
+a::after{
+content:" ";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 10%;
+border-radius: 3px;
+background-image: linear-gradient(45deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+transform: scaleX(0.0);
+transform-origin: center;
+transition: transform 200ms ease-in-out 10ms;
+
+}
+
+a:hover::after{
+transform :scaleX(1.0);
+  
 }
