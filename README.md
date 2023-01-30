@@ -18,7 +18,7 @@ it is a card containing a qr-code and some infomation to the user
 
 ### Screenshot
 
-![A srceenshot of my project](./Screenshot%202023-01-29%20002446.png)
+![A srceenshot of my project](./srceenshot.png)
 
 
 ### Links
